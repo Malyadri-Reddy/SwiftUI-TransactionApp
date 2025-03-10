@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B3C65A5B2D7CB05A00C51294 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = B3C65A5A2D7CB05A00C51294 /* SwiftUIFontIcon */; };
+		B3C65A662D7D886D00C51294 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = B3C65A652D7D886D00C51294 /* Collections */; };
+		B3C65A692D7D89B700C51294 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = B3C65A682D7D89B700C51294 /* SwiftUICharts */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B3C65A332D7C50C900C51294 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +35,22 @@
 		B3C65A3C2D7C50C900C51294 /* SwiftUI-TransactionAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-TransactionAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B3C65A5F2D7CB78C00C51294 /* Exceptions for "SwiftUI-TransactionApp" folder in "SwiftUI-TransactionApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B3C65A212D7C50C700C51294 /* SwiftUI-TransactionApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B3C65A242D7C50C700C51294 /* SwiftUI-TransactionApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B3C65A5F2D7CB78C00C51294 /* Exceptions for "SwiftUI-TransactionApp" folder in "SwiftUI-TransactionApp" target */,
+			);
 			path = "SwiftUI-TransactionApp";
 			sourceTree = "<group>";
 		};
@@ -52,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C65A692D7D89B700C51294 /* SwiftUICharts in Frameworks */,
+				B3C65A662D7D886D00C51294 /* Collections in Frameworks */,
+				B3C65A5B2D7CB05A00C51294 /* SwiftUIFontIcon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +134,9 @@
 			);
 			name = "SwiftUI-TransactionApp";
 			packageProductDependencies = (
+				B3C65A5A2D7CB05A00C51294 /* SwiftUIFontIcon */,
+				B3C65A652D7D886D00C51294 /* Collections */,
+				B3C65A682D7D89B700C51294 /* SwiftUICharts */,
 			);
 			productName = "SwiftUI-TransactionApp";
 			productReference = B3C65A222D7C50C700C51294 /* SwiftUI-TransactionApp.app */;
@@ -195,6 +220,11 @@
 			);
 			mainGroup = B3C65A192D7C50C700C51294;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B3C65A592D7CB05A00C51294 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
+				B3C65A642D7D886D00C51294 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				B3C65A672D7D89B700C51294 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B3C65A232D7C50C700C51294 /* Products */;
 			projectDirPath = "";
@@ -398,6 +428,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-TransactionApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-TransactionApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -426,6 +457,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-TransactionApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-TransactionApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -552,6 +584,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3C65A592D7CB05A00C51294 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huybuidac/SwiftUIFontIcon";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B3C65A642D7D886D00C51294 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.4;
+			};
+		};
+		B3C65A672D7D89B700C51294 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3C65A5A2D7CB05A00C51294 /* SwiftUIFontIcon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3C65A592D7CB05A00C51294 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
+			productName = SwiftUIFontIcon;
+		};
+		B3C65A652D7D886D00C51294 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3C65A642D7D886D00C51294 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		B3C65A682D7D89B700C51294 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3C65A672D7D89B700C51294 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3C65A1A2D7C50C700C51294 /* Project object */;
 }
